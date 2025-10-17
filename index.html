@@ -1,5 +1,345 @@
 <!doctype html>
-<html>
-  <head><meta charset="utf-8"><title>Home</title></head>
-  <body><h1>Hello from GitHub Pages</h1></body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Researcher & Developer</title>
+
+  <!-- SEO / Social -->
+  <meta name="description" content="Researcher and developer. Focus: AI, cybersecurity, graph learning, digital forensics." />
+  <meta property="og:title" content="Your Name — Researcher & Developer" />
+  <meta property="og:description" content="Researcher and developer. Focus: AI, cybersecurity, graph learning, digital forensics." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-username.github.io" />
+  <meta property="og:image" content="https://your-username.github.io/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- Fonts (optional, system fonts by default) -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"> -->
+
+  <style>
+    :root{
+      --bg: #0b0f19;
+      --panel: #0f1424;
+      --text: #e6e9f2;
+      --muted:#aab2c5;
+      --brand:#5b8cff;
+      --line:#1b233a;
+      --chip:#131a2e;
+      --ok:#30d158;
+      --warn:#ffd60a;
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f7f8fb;
+        --panel:#ffffff;
+        --text:#0c1020;
+        --muted:#5b647a;
+        --brand:#3b6dff;
+        --line:#e6e9f2;
+        --chip:#f1f3f9;
+      }
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:radial-gradient(1200px 600px at 80% -10%, rgba(91,140,255,.2), transparent 60%),
+                 radial-gradient(900px 400px at -10% 0, rgba(48,209,88,.12), transparent 60%),
+                 var(--bg);
+      color:var(--text);
+      font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
+    }
+    a{color:var(--brand); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px; margin-inline:auto; padding:28px 20px}
+    header{
+      position:sticky; top:0; backdrop-filter:saturate(180%) blur(8px);
+      background:color-mix(in srgb, var(--bg) 85%, transparent);
+      border-bottom:1px solid var(--line);
+      z-index:10;
+    }
+    .nav{display:flex; align-items:center; justify-content:space-between; gap:14px}
+    .brand{display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:.2px}
+    .brand .logo{
+      width:36px; height:36px; border-radius:10px; display:grid; place-items:center;
+      background:linear-gradient(135deg, var(--brand), #7aa4ff);
+      box-shadow:0 6px 18px rgba(91,140,255,.35);
+      color:white; font-weight:800;
+    }
+    .nav a.btn{padding:8px 14px; border:1px solid var(--line); border-radius:10px; background:var(--panel)}
+    .nav a.btn:hover{background:var(--chip)}
+    main{display:grid; gap:40px}
+    section{scroll-margin-top:90px}
+    .hero{
+      display:grid; align-items:center; gap:24px;
+      grid-template-columns: 1.3fr .7fr;
+    }
+    @media (max-width:900px){ .hero{grid-template-columns:1fr} }
+    .card{
+      background:linear-gradient(180deg, color-mix(in srgb, var(--panel) 96%, transparent) 0%, var(--panel) 100%);
+      border:1px solid var(--line); border-radius:16px; padding:22px;
+      box-shadow:0 10px 30px rgba(0,0,0,.08);
+    }
+    .kpis{display:grid; grid-template-columns:repeat(3,1fr); gap:12px}
+    .kpi{padding:14px; border-radius:14px; background:var(--chip); border:1px solid var(--line); text-align:center}
+    h1{font-size:clamp(28px, 4.8vw, 44px); line-height:1.15; margin:0}
+    h2{font-size:clamp(22px, 3.2vw, 28px); margin:0 0 14px}
+    h3{font-size:18px; margin:0 0 10px}
+    .muted{color:var(--muted)}
+    .grid{display:grid; gap:16px}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    @media (max-width:900px){ .grid.cols-3{grid-template-columns:1fr} .grid.cols-2{grid-template-columns:1fr} }
+    .chips{display:flex; flex-wrap:wrap; gap:8px}
+    .chip{padding:6px 10px; border:1px solid var(--line); border-radius:999px; background:var(--chip); font-size:13px}
+    .list{display:grid; gap:12px}
+    .row{display:flex; gap:12px; align-items:flex-start}
+    .row .dot{width:10px; height:10px; margin-top:8px; border-radius:50%; background:var(--brand)}
+    .pub{padding:14px; border-radius:12px; border:1px solid var(--line); background:var(--panel)}
+    .pub small{display:block; color:var(--muted)}
+    .footer{border-top:1px solid var(--line); margin-top:20px; padding-top:20px; font-size:14px; color:var(--muted)}
+    .cta{
+      display:flex; flex-wrap:wrap; gap:12px; margin-top:14px
+    }
+    .btn{
+      padding:10px 14px; border-radius:12px; border:1px solid var(--line); background:var(--panel); text-decoration:none; display:inline-flex; align-items:center; gap:8px
+    }
+    .btn.primary{background:var(--brand); border-color:transparent; color:white; box-shadow:0 10px 18px rgba(91,140,255,.35)}
+    .btn.primary:hover{filter:brightness(1.05)}
+    .btn:hover{text-decoration:none}
+    .icon{width:16px; height:16px; display:inline-block}
+    .tagline{font-size:18px; color:var(--muted)}
+    .avatar{
+      width:160px; height:160px; border-radius:24px; object-fit:cover; border:2px solid var(--line); box-shadow:0 10px 22px rgba(0,0,0,.12)
+    }
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}
+    .nowrap{white-space:nowrap}
+  </style>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Your Name",
+    "url":"https://your-username.github.io",
+    "jobTitle":"Researcher and Developer",
+    "affiliation":{"@type":"Organization","name":"Your Organization"},
+    "knowsAbout":[ "Artificial Intelligence", "Cybersecurity", "Graph Learning", "Digital Forensics" ],
+    "sameAs":[
+      "https://scholar.google.com/citations?user=XXXX",
+      "https://orcid.org/0000-0000-0000-0000",
+      "https://github.com/your-username",
+      "https://www.linkedin.com/in/your-handle"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">R</div>
+        <span>Your Name</span>
+      </div>
+      <nav class="nowrap">
+        <a class="btn" href="#research">Research</a>
+        <a class="btn" href="#projects">Projects</a>
+        <a class="btn" href="#publications">Publications</a>
+        <a class="btn" href="#teaching">Teaching</a>
+        <a class="btn" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="card">
+        <h1>Researcher & Developer</h1>
+        <p class="tagline">I study AI, cybersecurity, and graph methods. I design systems for digital forensics and secure mobility.</p>
+        <div class="chips" aria-label="Focus areas">
+          <span class="chip">AI</span>
+          <span class="chip">Cybersecurity</span>
+          <span class="chip">Graph Learning</span>
+          <span class="chip">Ontology & SWRL</span>
+          <span class="chip">Vehicle Forensics</span>
+        </div>
+        <div class="cta">
+          <a class="btn primary" href="#contact" aria-label="Contact">
+            <!-- send icon -->
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></svg>
+            Contact
+          </a>
+          <a class="btn" href="cv.pdf" target="_blank" rel="noopener">Download CV</a>
+          <a class="btn" href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://scholar.google.com/citations?user=XXXX" target="_blank" rel="noopener">Google Scholar</a>
+        </div>
+      </div>
+      <div class="card" style="display:grid; place-items:center;">
+        <img class="avatar" src="avatar.jpg" alt="Portrait of Your Name" />
+        <div class="kpis" style="margin-top:16px; width:100%;">
+          <div class="kpi"><div class="mono" style="font-size:22px;">10+</div><div class="muted">Publications</div></div>
+          <div class="kpi"><div class="mono" style="font-size:22px;">4</div><div class="muted">Projects</div></div>
+          <div class="kpi"><div class="mono" style="font-size:22px;">3</div><div class="muted">Datasets</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research" class="card">
+      <h2>Research</h2>
+      <p class="muted">I analyze signals on graphs and vehicle networks. I build rule-based reasoning with ontologies for incident interpretation.</p>
+
+      <div class="grid cols-3" style="margin-top:10px">
+        <div class="card">
+          <h3>Graph-based Detection</h3>
+          <p>Model flows as graphs. Extract spectral features. Detect anomalies with classical ML.</p>
+          <div class="chips">
+            <span class="chip">Spectral Features</span>
+            <span class="chip">Graph Signals</span>
+            <span class="chip">XGBoost</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Ontology & SWRL</h3>
+          <p>Encode tactics, techniques, and contexts. Infer attack types from evidence links.</p>
+          <div class="chips">
+            <span class="chip">OWL</span>
+            <span class="chip">SWRL</span>
+            <span class="chip">Pellet</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Vehicle Forensics</h3>
+          <p>Correlate CAN patterns with attacks. Produce explanations with explicit rules.</p>
+          <div class="chips">
+            <span class="chip">CAN</span>
+            <span class="chip">MITRE ATT&CK for Vehicles</span>
+            <span class="chip">Reasoning</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <div class="grid cols-2">
+        <article class="card">
+          <h3>ForenSys</h3>
+          <p>Ontology-based reasoning for vehicle cyber incidents. Generates attack explanations from observed evidence.</p>
+          <ul class="list">
+            <li class="row"><span class="dot"></span><span>Java + OWLAPI + Pellet</span></li>
+            <li class="row"><span class="dot"></span><span>MITRE ATT&CK mapping</span></li>
+            <li class="row"><span class="dot"></span><span>Report generation</span></li>
+          </ul>
+          <div class="cta">
+            <a class="btn" href="https://github.com/your-username/forensys" target="_blank" rel="noopener">Code</a>
+            <a class="btn" href="#" target="_blank" rel="noopener">Demo</a>
+            <a class="btn" href="#publications">Paper</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>SpectraTW</h3>
+          <p>Graph spectral features for intrusion detection. Integrates with standard classifiers.</p>
+          <ul class="list">
+            <li class="row"><span class="dot"></span><span>Python + NumPy</span></li>
+            <li class="row"><span class="dot"></span><span>Laplacian eigenfeatures</span></li>
+            <li class="row"><span class="dot"></span><span>Benchmark on IoT botnet data</span></li>
+          </ul>
+          <div class="cta">
+            <a class="btn" href="https://github.com/your-username/spectratw" target="_blank" rel="noopener">Code</a>
+            <a class="btn" href="#publications">Results</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications" class="card">
+      <h2>Publications</h2>
+      <div class="grid">
+        <div class="pub">
+          <strong>Cyberattack detection through GPML: Graph Processing for Machine Learning</strong>
+          <small>SoftwareX, Elsevier, 2025.</small>
+          <div class="cta">
+            <a class="btn" href="#" target="_blank" rel="noopener">PDF</a>
+            <a class="btn" href="#" target="_blank" rel="noopener">BibTeX</a>
+            <a class="btn" href="#" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+        <div class="pub">
+          <strong>Graph-Based Spectral Analysis for Detecting Cyber Attacks</strong>
+          <small>ARES 2024, Vienna.</small>
+          <div class="cta">
+            <a class="btn" href="#" target="_blank" rel="noopener">Slides</a>
+            <a class="btn" href="#" target="_blank" rel="noopener">Video</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEACHING -->
+    <section id="teaching" class="card">
+      <h2>Teaching</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Introduction to Cryptography</h3>
+          <p>Topics: Shannon, AES, RSA, Diffie-Hellman, MACs.</p>
+          <div class="chips">
+            <span class="chip">Course</span><span class="chip">Slides</span><span class="chip">Labs</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Cybersecurity Labs</h3>
+          <p>Network analysis, anomaly detection, blue-team workflows.</p>
+          <div class="chips">
+            <span class="chip">PCAP</span><span class="chip">IDS</span><span class="chip">Python</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="card">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span class="chip">Python</span><span class="chip">Java</span><span class="chip">SQL</span>
+        <span class="chip">Graph ML</span><span class="chip">SWRL/OWL</span><span class="chip">CAN</span>
+        <span class="chip">Docker</span><span class="chip">GitHub Actions</span>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <div class="cta">
+        <a class="btn" href="https://github.com/your-username" target="_blank" rel="noopener">
+          <!-- github -->
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.26c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.35-1.76-1.35-1.76-1.1-.75.08-.73.08-.73 1.22.09 1.86 1.25 1.86 1.25 1.08 1.85 2.84 1.31 3.53 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.24-3.25-.12-.3-.54-1.52.12-3.16 0 0 1.01-.32 3.3 1.24a11.5 11.5 0 0 1 6 0c2.29-1.56 3.3-1.24 3.3-1.24.66 1.64.24 2.86.12 3.16.77.85 1.24 1.93 1.24 3.25 0 4.63-2.81 5.66-5.49 5.96.43.37.81 1.1.81 2.23v3.3c0 .32.22.7.82.58A12 12 0 0 0 12 .5z"/></svg>
+          GitHub
+        </a>
+        <a class="btn" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener">ORCID</a>
+        <a class="btn" href="https://scholar.google.com/citations?user=XXXX" target="_blank" rel="noopener">Scholar</a>
+      </div>
+    </section>
+
+    <p class="footer">
+      © <span id="y"></span> Your Name. All rights reserved.
+    </p>
+  </main>
+
+  <script>
+    // set current year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
