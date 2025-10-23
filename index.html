@@ -118,29 +118,38 @@
     }
     .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}
     .nowrap{white-space:nowrap}
+
+	  /* defaults = light mode */
+	:root{
+	  --icon-color: #222;          /* dark icons */
+	  --icon-hover-bg: rgba(0,0,0,.08);
+	  --icon-border: rgba(0,0,0,.08);
+	}
 	
-	.icon-nav {
-	  display: flex;
-	  gap: .6rem;
+	/* auto-switch for users in dark mode */
+	@media (prefers-color-scheme: dark){
+	  :root{
+	    --icon-color: #fff;
+	    --icon-hover-bg: rgba(255,255,255,.12);
+	    --icon-border: rgba(255,255,255,.18);
+	  }
 	}
-
-	.icon-btn {
-	  display: inline-flex;
-	  align-items: center;
-	  justify-content: center;
-	  width: 44px; height: 44px;        /* button hit area */
-	  border-radius: 10px;
-	  color: #fff;                       /* icons stay white */
-	  text-decoration: none;
+	.icon-nav{ display:flex; gap:.6rem; }
+	
+	.icon-btn{
+	  display:inline-flex;
+	  align-items:center;
+	  justify-content:center;
+	  width:44px; height:44px;
+	  border-radius:10px;
+	  color: var(--icon-color);            /* <- use theme var */
+	  text-decoration:none;
+	  border: 1px solid var(--icon-border);/* optional for contrast */
+	  background: transparent;             /* or use a subtle chip bg */
 	}
-
-	.icon-btn:hover { 
-	  background: rgba(255,255,255,.12); /* subtle hover on dark backgrounds */
-	}
-
-	.icon-btn svg { 
-	  display: block;
-	}
+	
+	.icon-btn:hover{ background: var(--icon-hover-bg); }
+	.icon-btn svg{ display:block; }  
 
 
   </style>
