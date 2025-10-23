@@ -118,6 +118,31 @@
     }
     .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}
     .nowrap{white-space:nowrap}
+	
+	.icon-nav {
+	  display: flex;
+	  gap: .6rem;
+	}
+
+	.icon-btn {
+	  display: inline-flex;
+	  align-items: center;
+	  justify-content: center;
+	  width: 44px; height: 44px;        /* button hit area */
+	  border-radius: 10px;
+	  color: #fff;                       /* icons stay white */
+	  text-decoration: none;
+	}
+
+	.icon-btn:hover { 
+	  background: rgba(255,255,255,.12); /* subtle hover on dark backgrounds */
+	}
+
+	.icon-btn svg { 
+	  display: block;
+	}
+
+
   </style>
 
   <!-- JSON-LD -->
@@ -126,7 +151,7 @@
     "@context":"https://schema.org",
     "@type":"Person",
     "name":"Your Name",
-    "url":"https://your-username.github.io",
+    "url":"https://majedjaber1996.github.io",
     "jobTitle":"Researcher and Developer",
     "affiliation":{"@type":"Organization","name":"Your Organization"},
     "knowsAbout":[ "Artificial Intelligence", "Cybersecurity", "Graph Learning", "Digital Forensics" ],
@@ -146,14 +171,64 @@
         <div class="logo" aria-hidden="true">MJ</div>
         <span>Majed Jaber</span>
       </div>
-      <nav class="nowrap">
-        <a class="btn" href="#research">Research</a>
+      <!--<nav class="nowrap">
+        <a class="btn" href="#research">Experience</a>
         <a class="btn" href="#projects">Projects</a>
         <a class="btn" href="#publications">Publications</a>
         <a class="btn" href="#teaching">Teaching</a>
-        <a class="btn" href="#contact">Contact</a>
+        <a class="btn" href="#contact">Contact</a>-->
+		<nav class="nowrap icon-nav">
+		  <a class="btn icon-btn" href="#research" aria-label="Experience" title="Experience">
+			<!-- briefcase -->
+			<svg viewBox="0 0 24 24" width="32" height="32" fill="none"
+				 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+			  <path d="M3 9h18v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9z"/>
+			  <path d="M9 9V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v3"/>
+			  <path d="M3 12h18"/>
+			</svg>
+		  </a>
+
+		  <a class="btn icon-btn" href="#projects" aria-label="Projects" title="Projects">
+			<!-- cube -->
+			<svg viewBox="0 0 24 24" width="32" height="32" fill="none"
+				 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+			  <path d="M12 2l8 4-8 4-8-4 8-4z"/>
+			  <path d="M20 6v8l-8 4-8-4V6"/>
+			  <path d="M12 10v8"/>
+			</svg>
+		  </a>
+
+		  <a class="btn icon-btn" href="#publications" aria-label="Publications" title="Publications">
+			<!-- book -->
+			<svg viewBox="0 0 24 24" width="32" height="32" fill="none"
+				 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+			  <path d="M3 5a4 4 0 0 1 4-4h5v18H7a4 4 0 0 0-4 4V5z"/>
+			  <path d="M21 5a4 4 0 0 0-4-4h-5v18h5a4 4 0 0 1 4 4V5z"/>
+			</svg>
+		  </a>
+
+		  <a class="btn icon-btn" href="#teaching" aria-label="Teaching" title="Teaching">
+			<!-- graduation cap -->
+			<svg viewBox="0 0 24 24" width="32" height="32" fill="none"
+				 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+			  <path d="M22 9l-10-5L2 9l10 5 10-5z"/>
+			  <path d="M6 12v5a6 3 0 0 0 12 0v-5"/>
+			  <path d="M22 9v6"/>
+			</svg>
+		  </a>
+
+		  <a class="btn icon-btn" href="#contact" aria-label="Contact" title="Contact">
+			<!-- envelope -->
+			<svg viewBox="0 0 24 24" width="32" height="32" fill="none"
+				 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+			  <rect x="2" y="4" width="20" height="16" rx="2" ry="2"/>
+			  <path d="M22 6l-10 7L2 6"/>
+			</svg>
+		  </a>
+		</nav>
       </nav>
     </div>
+	
   </header>
 
   <main class="wrap">
@@ -161,13 +236,13 @@
     <section class="hero">
       <div class="card">
         <h1>Researcher & Developer</h1>
-        <p class="tagline">I study AI, cybersecurity, and graph methods. I design systems for digital forensics and secure mobility.</p>
+        <p class="tagline">AI Engineer, Security Analyst.</p>
         <div class="chips" aria-label="Focus areas">
           <span class="chip">AI</span>
           <span class="chip">Cybersecurity</span>
           <span class="chip">Graph Learning</span>
-          <span class="chip">Ontology & SWRL</span>
-          <span class="chip">Vehicle Forensics</span>
+          <span class="chip">Spectral Analysis</span>
+          <span class="chip">Problem-Solving</span>
         </div>
         <div class="cta">
           <a class="btn primary" href="#contact" aria-label="Contact">
@@ -175,24 +250,24 @@
             <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></svg>
             Contact
           </a>
-          <a class="btn" href="cv.pdf" target="_blank" rel="noopener">Download CV</a>
-          <a class="btn" href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="https://scholar.google.com/citations?user=XXXX" target="_blank" rel="noopener">Google Scholar</a>
+          <!--<a class="btn" href="cv.pdf" target="_blank" rel="noopener">Download CV</a>-->
+          <a class="btn" href="https://github.com/majedjaber1996" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://scholar.google.com/citations?user=XXXX&user=IiuFIiYAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
         </div>
       </div>
       <div class="card" style="display:grid; place-items:center;">
         <img class="avatar" src="avatar.jpg" alt="Portrait of Your Name" />
         <div class="kpis" style="margin-top:16px; width:100%;">
-          <div class="kpi"><div class="mono" style="font-size:22px;">10+</div><div class="muted">Publications</div></div>
-          <div class="kpi"><div class="mono" style="font-size:22px;">4</div><div class="muted">Projects</div></div>
-          <div class="kpi"><div class="mono" style="font-size:22px;">3</div><div class="muted">Datasets</div></div>
+          <div class="kpi"><div class="mono" style="font-size:22px;">5+</div><div class="muted">Publications</div></div>
+          <div class="kpi"><div class="mono" style="font-size:22px;">10+</div><div class="muted">Projects</div></div>
+          <div class="kpi"><div class="mono" style="font-size:22px;">3+</div><div class="muted">Datasets</div></div>
         </div>
       </div>
     </section>
 
-    <!-- RESEARCH -->
-    <section id="research" class="card">
-      <h2>Research</h2>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="card">
+      <h2>Experience</h2>
       <p class="muted">I analyze signals on graphs and vehicle networks. I build rule-based reasoning with ontologies for incident interpretation.</p>
 
       <div class="grid cols-3" style="margin-top:10px">
@@ -230,33 +305,84 @@
     <section id="projects" class="card">
       <h2>Projects</h2>
       <div class="grid cols-2">
-        <article class="card">
-          <h3>ForenSys</h3>
-          <p>Ontology-based reasoning for vehicle cyber incidents. Generates attack explanations from observed evidence.</p>
+		
+		<article class="card">
+          <h3>Price Forcasting</h3>
+          <p>AI implemented model for price-prediction over long-term based on closing prices</p>
+		  <div class="chips">
+			<span class="chip">Owned</span>
+		  </div>
           <ul class="list">
-            <li class="row"><span class="dot"></span><span>Java + OWLAPI + Pellet</span></li>
-            <li class="row"><span class="dot"></span><span>MITRE ATT&CK mapping</span></li>
-            <li class="row"><span class="dot"></span><span>Report generation</span></li>
+            <li class="row"><span class="dot"></span><span>Python</span></li>
+			<li class="row"><span class="dot"></span><span>TensorFlow</span></li>
+            <li class="row"><span class="dot"></span><span>News & Price Datasets</span></li>
+			<li class="row"><span class="dot"></span><span>Sentiment Analysis</span></li>
           </ul>
           <div class="cta">
+            <a class="btn" href="https://github.com/lre-security-systems-team/gpml" target="_blank" rel="noopener">View the Library</a>
+          </div>
+        </article>
+		
+		<article class="card">
+		  <h3>GPML Python Library</h3> 
+		  <div class="chips">
+			<span class="chip">EPITA • France</span><span class="chip">Contributer</span>
+		  </div>
+		  <p>Graph Processing for Machine Learning (GPML) python package that provide graph-based representation and spectral measures for Networks for CyberAttack detection</p>
+		  <ul class="list">
+			<li class="row"><span class="dot"></span><span>Graph Processing</span></li>
+			<li class="row"><span class="dot"></span><span>Spectral Graph Analysis</span></li>
+			<li class="row"><span class="dot"></span><span>Proposed Spectral Measures</span></li>
+			<li class="row"><span class="dot"></span><span>Time-series Extraction</span></li>
+		  </ul>
+		  <div class="chips">
+			<span class="chip">C#</span><span class="chip">ASP.NET</span><span class="chip">MSSQLSERVER</span>
+		  </div>
+		   <div class="cta">
+            <a class="btn" href="https://github.com/lre-security-systems-team/gpml" target="_blank" rel="noopener">Use this Library</a>
+          </div>
+		</article>
+		
+		<article class="card">
+		  <h3>IDENTITY ASP.NetCore</h3> 
+		  <div class="chips">
+			<span class="chip">Owned</span>
+		  </div>
+		  <p>Authorize and authenticate users through different apps and services</p>
+		  <ul class="list">
+			<li class="row"><span class="dot"></span><span>Token-Based</span></li>
+			<li class="row"><span class="dot"></span><span>2FA Authentication</span></li>
+			<li class="row"><span class="dot"></span><span>API Endpoints</span></li>
+			<li class="row"><span class="dot"></span><span>Secured Channels</span></li>
+		  </ul>
+		  <div class="chips">
+			<span class="chip">C#</span><span class="chip">ASP.NET</span><span class="chip">MSSQLSERVER</span>
+		  </div>
+		</article>
+
+		
+        <article class="card">
+          <h3>MARKET MAKER</h3> 
+		  <div class="chips">
+			<span class="chip">FinTech • Lebanon</span><span class="chip">Contributer</span>
+          </div>
+          <p>An algorithmic trading solution to customize proprietary trading strategies.</p>
+          <ul class="list">
+            <li class="row"><span class="dot"></span><span>Algorithmic Trading</span></li>
+            <li class="row"><span class="dot"></span><span>Multi-Source Data Collection, KWT Market</span></li>
+			<li class="row"><span class="dot"></span><span>Real-time Data Processing</span></li>
+			<li class="row"><span class="dot"></span><span>Order Settlement</span></li>
+          </ul>
+		  <div class="chips">
+			<span class="chip">C#</span><span class="chip">Java</span><span class="chip">WinForms</span><span class="chip">APIs</span>
+			<span class="chip">Hubs</span><span class="chip">Kafka</span><span class="chip">MVVM</span>
+          </div> 
+          <!--<div class="cta">
             <a class="btn" href="https://github.com/your-username/forensys" target="_blank" rel="noopener">Code</a>
             <a class="btn" href="#" target="_blank" rel="noopener">Demo</a>
             <a class="btn" href="#publications">Paper</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>SpectraTW</h3>
-          <p>Graph spectral features for intrusion detection. Integrates with standard classifiers.</p>
-          <ul class="list">
-            <li class="row"><span class="dot"></span><span>Python + NumPy</span></li>
-            <li class="row"><span class="dot"></span><span>Laplacian eigenfeatures</span></li>
-            <li class="row"><span class="dot"></span><span>Benchmark on IoT botnet data</span></li>
-          </ul>
-          <div class="cta">
-            <a class="btn" href="https://github.com/your-username/spectratw" target="_blank" rel="noopener">Code</a>
-            <a class="btn" href="#publications">Results</a>
-          </div>
+          </div>-->
+		  
         </article>
       </div>
     </section>
@@ -267,19 +393,42 @@
       <div class="grid">
         <div class="pub">
           <strong>Cyberattack detection through GPML: Graph Processing for Machine Learning</strong>
-          <small>SoftwareX, Elsevier, 2025.</small>
+          <small>International Journal, SoftwareX, Elsevier, 2025</small>
           <div class="cta">
-            <a class="btn" href="#" target="_blank" rel="noopener">PDF</a>
-            <a class="btn" href="#" target="_blank" rel="noopener">BibTeX</a>
-            <a class="btn" href="#" target="_blank" rel="noopener">Code</a>
+            <a class="btn" href="https://www.sciencedirect.com/science/article/pii/S2352711025002742" target="_blank" rel="noopener">Paper</a>
+            <a class="btn" href="https://github.com/lre-security-systems-team/gpml" target="_blank" rel="noopener">Code</a>
           </div>
         </div>
         <div class="pub">
-          <strong>Graph-Based Spectral Analysis for Detecting Cyber Attacks</strong>
-          <small>ARES 2024, Vienna.</small>
+          <strong>Spectral Graph Analysis of Bipartite Graphs for Advanced Attack Detection</strong>
+          <small>International Conference, European Interdisciplinary Cybersecurity Conference (EICC25), 2025</small>
           <div class="cta">
-            <a class="btn" href="#" target="_blank" rel="noopener">Slides</a>
-            <a class="btn" href="#" target="_blank" rel="noopener">Video</a>
+            <a class="btn" href="https://link.springer.com/chapter/10.1007/978-3-031-94855-8_16" target="_blank" rel="noopener">Paper</a>
+            <a class="btn" href="https://github.com/majedjaber1996/jaber.2025.eicc" target="_blank" rel="noopener">Reproducible Capsule</a>
+          </div>
+        </div>
+		<div class="pub">
+          <strong>Graph-Based Spectral Analysis for Detecting Cyber Attacks</strong>
+          <small>International Conference, Rank B, on Availability, Reliability and Security (ARES'24), Vienne, Austria, July 2024</small>
+          <div class="cta">
+            <a class="btn" href="https://dl.acm.org/doi/10.1145/3664476.3664498" target="_blank" rel="noopener">Paper</a>
+            <a class="btn" href="https://github.com/lre-security-systems-team/jaber.2024.ares.git" target="_blank" rel="noopener">Reproducible Capsule</a>
+          </div>
+        </div>
+		<div class="pub">
+          <strong>Spectral Analysis for Attack Detection</strong>
+          <small>National Conference, RESSI, Eppe-Sauvage, France, May 2024</small>
+          <div class="cta">
+            <a class="btn" href="https://publis.icube.unistra.fr/7-JBP24" target="_blank" rel="noopener">Paper</a>
+            <!--<a class="btn" href="https://github.com/lre-security-systems-team/jaber.2024.ares.git" target="_blank" rel="noopener">Reproducible Capsule</a>-->
+          </div>
+        </div>
+		<div class="pub">
+          <strong>Structural and spectral analysis of dynamic graphs for attack detection</strong>
+          <small>National Conference, PFIA/RJCIA conference, Strasbourg, France, May 2023</small>
+          <div class="cta">
+            <a class="btn" href="https://publis.icube.unistra.fr/5-JBP23" target="_blank" rel="noopener">Paper</a>
+            <!--<a class="btn" href="https://github.com/lre-security-systems-team/jaber.2024.ares.git" target="_blank" rel="noopener">Reproducible Capsule</a>-->
           </div>
         </div>
       </div>
@@ -291,16 +440,27 @@
       <div class="grid cols-2">
         <div class="card">
           <h3>Introduction to Cryptography</h3>
-          <p>Topics: Shannon, AES, RSA, Diffie-Hellman, MACs.</p>
-          <div class="chips">
-            <span class="chip">Course</span><span class="chip">Slides</span><span class="chip">Labs</span>
-          </div>
+          <p>Topics: Shannon, TLS, Symmetric, Asymmetric, AES, RSA, Diffie-Hellman, Hashing.</p>
+			<div class="chips">
+			  <!--<span class="chip">Course</span><span class="chip">Labs</span><span class="chip">Workshops</span>-->
+			  <span class="chip">EPITA • PARIS</span>
+			</div>
         </div>
         <div class="card">
           <h3>Cybersecurity Labs</h3>
-          <p>Network analysis, anomaly detection, blue-team workflows.</p>
+          <p>Network analysis and Secured Channels.</p>
           <div class="chips">
-            <span class="chip">PCAP</span><span class="chip">IDS</span><span class="chip">Python</span>
+            <!--<span class="chip">PCAP</span><span class="chip">IDS</span><span class="chip">Python</span>-->
+			<span class="chip">EPITA • PARIS</span>
+          </div>
+        </div>
+		<div class="card">
+          <h3>Private Teaching</h3>
+          <!--<p>Network analysis and Secured Channels.</p>-->
+          <div class="chips">
+            <!--<span class="chip">PCAP</span><span class="chip">IDS</span><span class="chip">Python</span>-->
+			<span class="chip">Software Engineering</span><span class="chip">Building WinForm Apps</span>
+			<span class="chip">Cryptography with Python</span><span class="chip">Programming Languages: C, C++, C#</span>
           </div>
         </div>
       </div>
@@ -310,25 +470,29 @@
     <section class="card">
       <h2>Skills</h2>
       <div class="chips">
-        <span class="chip">Python</span><span class="chip">Java</span><span class="chip">SQL</span>
-        <span class="chip">Graph ML</span><span class="chip">SWRL/OWL</span><span class="chip">CAN</span>
-        <span class="chip">Docker</span><span class="chip">GitHub Actions</span>
+        <span class="chip">Software Engineering</span><span class="chip">Python</span><span class="chip">C#</span><span class="chip">C++</span>
+		<span class="chip">Java</span><span class="chip">SQL</span>
+        <span class="chip">Machine Learning</span><span class="chip">Supervised Learning</span><span class="chip">Graph-Based ML</span>
+		<span class="chip">GenAI</span><span class="chip">LLMs</span><span class="chip">Spectral Graphs</span>
+		<span class="chip">Docker</span><span class="chip">Git Actions</span><span class="chip">APIs</span>
+		<span class="chip">Kafka</span><span class="chip">Streaming</span><span class="chip">Hubs</span>
+		<span class="chip">Attack Detection</span><span class="chip">Identity</span>
       </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="card">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>Email: <a href="mailto:majed.jaber@epita.fr">majed.jaber@epita.fr</a></p>
       <div class="cta">
-        <a class="btn" href="https://github.com/your-username" target="_blank" rel="noopener">
+        <a class="btn" href="https://github.com/majedjaber1996" target="_blank" rel="noopener">
           <!-- github -->
           <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.26c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.35-1.76-1.35-1.76-1.1-.75.08-.73.08-.73 1.22.09 1.86 1.25 1.86 1.25 1.08 1.85 2.84 1.31 3.53 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.24-3.25-.12-.3-.54-1.52.12-3.16 0 0 1.01-.32 3.3 1.24a11.5 11.5 0 0 1 6 0c2.29-1.56 3.3-1.24 3.3-1.24.66 1.64.24 2.86.12 3.16.77.85 1.24 1.93 1.24 3.25 0 4.63-2.81 5.66-5.49 5.96.43.37.81 1.1.81 2.23v3.3c0 .32.22.7.82.58A12 12 0 0 0 12 .5z"/></svg>
           GitHub
         </a>
-        <a class="btn" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener">ORCID</a>
-        <a class="btn" href="https://scholar.google.com/citations?user=XXXX" target="_blank" rel="noopener">Scholar</a>
+        <a class="btn" href="https://www.linkedin.com/in/majedjaber96" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://orcid.org/0009-0005-2882-4647" target="_blank" rel="noopener">ORCID</a>
+        <a class="btn" href="https://publis.icube.unistra.fr/?author=majed+jaber&allaut=or#hideMenu" target="_blank" rel="noopener">Publications</a>
       </div>
     </section>
 
