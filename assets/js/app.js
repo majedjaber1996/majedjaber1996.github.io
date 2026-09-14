@@ -116,6 +116,7 @@ async function boot() {
     if (data.profile.cvHref) btn.hidden = false;
   });
 
+  ui.initAvatar(data.profile.initials);
   ui.initReveal();
   ui.initCounters();
   ui.initAccordions();

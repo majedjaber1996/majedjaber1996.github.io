@@ -1,38 +1,42 @@
 [
   {
     "degree": "PhD in Computer Science",
-    "field": "Explainable AI for IoT cyberattack detection",
     "org": "Université de Strasbourg (ICube) & EPITA",
-    "place": "France",
+    "place": "Strasbourg / Paris, France",
     "start": "2022",
     "end": "2025",
-    "tags": ["Spectral Graph Analysis", "XAI", "Attack Detection"]
+    "highest": true,
+    "summary": "Doctoral research on explainable AI for cyberattack detection: modelling network and IoT traffic as dynamic graphs, reading the evolution of the Laplacian spectrum, and turning spectral change into detections an analyst can justify. Produced 7 peer-reviewed publications and the open-source GPML library.",
+    "tags": ["Spectral Graph Analysis", "Explainable AI", "Attack Detection", "IoT", "Python"]
   },
   {
     "degree": "MSc in Information Systems & Data Intelligence",
-    "field": "Data engineering and business intelligence",
     "org": "Lebanese University",
     "place": "Lebanon",
     "start": "2018",
     "end": "2019",
-    "tags": ["Data Warehousing", "BI", "Machine Learning"]
+    "highest": false,
+    "summary": "Data engineering and decision support: warehousing, ETL pipelines, business intelligence and applied machine learning over enterprise information systems.",
+    "tags": ["Data Warehousing", "ETL", "Business Intelligence", "Machine Learning"]
   },
   {
     "degree": "MSc in Game Design & Development",
-    "field": "Real-time graphics and interactive systems",
     "org": "Lebanese University",
     "place": "Lebanon",
     "start": "2016",
     "end": "2018",
-    "tags": ["C++", "Unity", "Graphics"]
+    "highest": false,
+    "summary": "Real-time graphics and interactive systems: engine programming, rendering pipelines, physics and gameplay architecture.",
+    "tags": ["C++", "Unity", "Real-time Graphics", "Interactive Systems"]
   },
   {
     "degree": "BSc in Computer Science",
-    "field": "Software engineering fundamentals",
     "org": "Lebanese University",
     "place": "Lebanon",
     "start": "2013",
     "end": "2016",
-    "tags": ["Algorithms", "Databases", "Programming"]
+    "highest": false,
+    "summary": "Core computer science: algorithms and data structures, databases, operating systems, networks and software engineering.",
+    "tags": ["Algorithms", "Databases", "Networks", "Software Engineering"]
   }
 ]

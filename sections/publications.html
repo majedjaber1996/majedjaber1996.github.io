@@ -2,9 +2,9 @@
   <div class="wrap">
     <header class="section-head reveal">
       <p class="section-kicker">05 — Publications</p>
-      <h2 class="section-title">Selected publications</h2>
+      <h2 class="section-title">Publications</h2>
       <p class="section-sub muted">
-        Full list on
+        Also on
         <a href="https://scholar.google.com/citations?user=IiuFIiYAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
         and
         <a href="https://publis.icube.unistra.fr/?author=majed+jaber&amp;allaut=or#hideMenu" target="_blank" rel="noopener">ICube</a>.
@@ -29,9 +29,11 @@
           <span class="pub-year" data-bind="year"></span>
           <div class="pub-body">
             <h3 class="pub-title" data-bind="title"></h3>
-            <p class="pub-venue muted"><span data-bind="venue"></span></p>
+            <p class="pub-venue muted" data-bind="authors"></p>
+            <p class="pub-venue muted" data-bind="venue"></p>
             <ul class="chips">
               <li class="chip chip-sm" data-bind="type"></li>
+              <li class="chip chip-sm" data-show="award" data-bind="award"></li>
             </ul>
             <div class="cta-row" data-list="links">
               <template>

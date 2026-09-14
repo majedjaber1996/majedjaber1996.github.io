@@ -179,19 +179,29 @@ export function initCounters(scope = document) {
 
 /* ---------- expandable cards ---------- */
 export function initAccordions(scope = document) {
-  scope.querySelectorAll('[data-accordion]').forEach((card, index) => {
-    const button = card.querySelector('button[aria-expanded]');
-    const body = card.querySelector('.timeline-body');
-    if (!button || !body) return;
+  // group by section so each timeline opens its own first item
+  const groups = new Map();
+  scope.querySelectorAll('[data-accordion]').forEach((card) => {
+    const key = card.closest('section')?.id || '_';
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(card);
+  });
 
-    const setOpen = (open) => {
-      button.setAttribute('aria-expanded', String(open));
-      body.hidden = !open;
-    };
+  groups.forEach((cards) => {
+    cards.forEach((card, index) => {
+      const button = card.querySelector('button[aria-expanded]');
+      const body = card.querySelector('.timeline-body');
+      if (!button || !body) return;
 
-    setOpen(index === 0);
-    button.addEventListener('click', () => {
-      setOpen(button.getAttribute('aria-expanded') !== 'true');
+      const setOpen = (open) => {
+        button.setAttribute('aria-expanded', String(open));
+        body.hidden = !open;
+      };
+
+      setOpen(index === 0);
+      button.addEventListener('click', () => {
+        setOpen(button.getAttribute('aria-expanded') !== 'true');
+      });
     });
   });
 }
@@ -295,6 +305,24 @@ export function initCopyEmail() {
     }
     setTimeout(() => { if (label) label.textContent = original; }, 1800);
   });
+}
+
+/* ---------- avatar fallback: monogram if the image is missing ---------- */
+export function initAvatar(initials = '') {
+  const img = document.querySelector('.avatar');
+  if (!img) return;
+
+  const swap = () => {
+    if (!img.parentNode) return;
+    const mono = document.createElement('div');
+    mono.className = 'avatar-mono';
+    mono.setAttribute('aria-hidden', 'true');
+    mono.textContent = initials;
+    img.replaceWith(mono);
+  };
+
+  if (img.complete && img.naturalWidth === 0) swap();
+  img.addEventListener('error', swap, { once: true });
 }
 
 /* ---------- footer year ---------- */
