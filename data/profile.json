@@ -1,0 +1,43 @@
+{
+  "name": "Majed Jaber",
+  "initials": "MJ",
+  "headline": "AI Engineer & Security Researcher",
+  "typed": [
+    "AI Engineer",
+    "Security Researcher",
+    "PhD in Computer Science",
+    "Graph Learning & XAI"
+  ],
+  "summary": "I build AI systems that detect and explain cyberattacks. My work combines graph learning, spectral analysis and knowledge graphs to turn raw network and vehicle telemetry into decisions a human can audit.",
+  "location": "Strasbourg, France",
+  "avatar": "profile.png",
+  "focus": [
+    "Artificial Intelligence",
+    "Cybersecurity",
+    "Graph Learning",
+    "Spectral Analysis",
+    "Explainable AI",
+    "LLMs"
+  ],
+  "stats": [
+    { "value": 7, "suffix": "", "label": "Publications" },
+    { "value": 5, "suffix": "+", "label": "Years in Security R&D" },
+    { "value": 10, "suffix": "+", "label": "Projects" },
+    { "value": 3, "suffix": "", "label": "Languages" }
+  ],
+  "email": "jaberm@unistra.fr",
+  "emailAlt": "mjdjbr@gmail.com",
+  "cv": "",
+  "links": [
+    { "label": "GitHub",  "url": "https://github.com/majedjaber1996", "icon": "github" },
+    { "label": "LinkedIn","url": "https://www.linkedin.com/in/majedjaber96", "icon": "linkedin" },
+    { "label": "Scholar", "url": "https://scholar.google.com/citations?user=IiuFIiYAAAAJ", "icon": "scholar" },
+    { "label": "ORCID",   "url": "https://orcid.org/0009-0005-2882-4647", "icon": "orcid" },
+    { "label": "ICube",   "url": "https://publis.icube.unistra.fr/?author=majed+jaber&allaut=or#hideMenu", "icon": "link" }
+  ],
+  "languages": [
+    { "name": "Arabic",  "level": "Native" },
+    { "name": "English", "level": "Fluent" },
+    { "name": "French",  "level": "Intermediate (B1)" }
+  ]
+}

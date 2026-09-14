@@ -1,0 +1,76 @@
+[
+  {
+    "role": "AI Engineer",
+    "org": "GAIA / ICube",
+    "place": "Strasbourg, France",
+    "start": "2026",
+    "end": "Present",
+    "current": true,
+    "summary": "Applied AI engineering on graph- and LLM-based systems for security and scientific data.",
+    "points": [
+      "Design and ship AI pipelines from research prototype to working service",
+      "Graph neural networks and knowledge-graph reasoning over heterogeneous data",
+      "LLM-assisted analysis with traceable, auditable outputs"
+    ],
+    "tags": ["Python", "PyTorch", "GNN", "Knowledge Graphs", "LLMs"]
+  },
+  {
+    "role": "Cybersecurity R&D Engineer",
+    "org": "Expleo",
+    "place": "France",
+    "start": "2025",
+    "end": "2026",
+    "current": false,
+    "summary": "Research and development on digital forensics for connected and autonomous vehicles.",
+    "points": [
+      "Neuro-symbolic forensic reasoning over in-vehicle network traces",
+      "Ontology-driven incident interpretation aligned with ISO frameworks",
+      "Automotive attack detection on CAN / Ethernet telemetry"
+    ],
+    "tags": ["Digital Forensics", "Ontologies", "Neo4j", "Automotive", "ISO 21434"]
+  },
+  {
+    "role": "PhD Researcher & Data Engineer",
+    "org": "Université de Strasbourg (ICube) & EPITA",
+    "place": "Strasbourg / Paris, France",
+    "start": "2022",
+    "end": "2025",
+    "current": false,
+    "summary": "Doctoral research on explainable AI for cyberattack detection in IoT and network traffic.",
+    "points": [
+      "Proposed spectral graph measures for detecting anomalies in dynamic networks",
+      "Authored the GPML open-source library and 7 peer-reviewed publications",
+      "Taught cryptography and cybersecurity labs at EPITA Paris"
+    ],
+    "tags": ["Spectral Graphs", "XAI", "Machine Learning", "Research", "Teaching"]
+  },
+  {
+    "role": "Senior Software Engineer",
+    "org": "IDS Fintech",
+    "place": "Beirut, Lebanon",
+    "start": "2019",
+    "end": "2022",
+    "current": false,
+    "summary": "Built and maintained real-time trading and settlement software for Gulf capital markets.",
+    "points": [
+      "Led development of an algorithmic market-making platform",
+      "Real-time multi-source market data ingestion and order settlement",
+      "Designed identity and authorization services across internal apps"
+    ],
+    "tags": ["C#", ".NET", "Kafka", "MSSQL", "Real-time Systems"]
+  },
+  {
+    "role": "Junior Software Engineer",
+    "org": "RAH Healthcare",
+    "place": "Lebanon",
+    "start": "2017",
+    "end": "2019",
+    "current": false,
+    "summary": "Developed internal healthcare management applications and reporting tools.",
+    "points": [
+      "Desktop and web applications for clinical and administrative workflows",
+      "Database design, reporting and data migration"
+    ],
+    "tags": ["C#", "ASP.NET", "SQL Server", "WinForms"]
+  }
+]

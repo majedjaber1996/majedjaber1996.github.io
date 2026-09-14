@@ -1,0 +1,33 @@
+<section class="section" id="contact">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="section-kicker">08 — Contact</p>
+      <h2 class="section-title">Let's talk</h2>
+      <p class="section-sub muted">Open to AI engineering, research and AI-security roles in France.</p>
+    </header>
+
+    <div class="card contact-card reveal">
+      <div class="contact-main">
+        <p class="muted">Email</p>
+        <div class="email-row">
+          <a class="email-link" data-bind-href="mailtoHref" data-bind="email"></a>
+          <button class="btn btn-sm" type="button" id="copyEmail" data-bind-data-email="email">
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5h10"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+        <p class="muted small">Also reachable at <a data-bind-href="mailtoAltHref" data-bind="emailAlt"></a></p>
+      </div>
+
+      <div class="contact-links" data-list="links">
+        <template>
+          <a class="link-tile" target="_blank" rel="noopener" data-bind-href="url">
+            <span data-icon="icon" aria-hidden="true"></span>
+            <span data-bind="label"></span>
+            <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+        </template>
+      </div>
+    </div>
+  </div>
+</section>

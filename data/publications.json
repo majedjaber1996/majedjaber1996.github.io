@@ -1,0 +1,55 @@
+[
+  {
+    "title": "Cyberattack detection through GPML: Graph Processing for Machine Learning",
+    "authors": "M. Jaber et al.",
+    "venue": "SoftwareX, Elsevier",
+    "type": "Journal",
+    "year": 2025,
+    "links": [
+      { "label": "Paper", "url": "https://www.sciencedirect.com/science/article/pii/S2352711025002742" },
+      { "label": "Code", "url": "https://github.com/lre-security-systems-team/gpml" }
+    ]
+  },
+  {
+    "title": "Spectral Graph Analysis of Bipartite Graphs for Advanced Attack Detection",
+    "authors": "M. Jaber et al.",
+    "venue": "European Interdisciplinary Cybersecurity Conference (EICC '25)",
+    "type": "Conference",
+    "year": 2025,
+    "links": [
+      { "label": "Paper", "url": "https://link.springer.com/chapter/10.1007/978-3-031-94855-8_16" },
+      { "label": "Reproducible Capsule", "url": "https://github.com/majedjaber1996/jaber.2025.eicc" }
+    ]
+  },
+  {
+    "title": "Graph-Based Spectral Analysis for Detecting Cyber Attacks",
+    "authors": "M. Jaber et al.",
+    "venue": "Int. Conf. on Availability, Reliability and Security (ARES '24), Vienna, Austria",
+    "type": "Conference",
+    "year": 2024,
+    "links": [
+      { "label": "Paper", "url": "https://dl.acm.org/doi/10.1145/3664476.3664498" },
+      { "label": "Reproducible Capsule", "url": "https://github.com/lre-security-systems-team/jaber.2024.ares" }
+    ]
+  },
+  {
+    "title": "Spectral Analysis for Attack Detection",
+    "authors": "M. Jaber et al.",
+    "venue": "RESSI (national), Eppe-Sauvage, France",
+    "type": "National",
+    "year": 2024,
+    "links": [
+      { "label": "Paper", "url": "https://publis.icube.unistra.fr/7-JBP24" }
+    ]
+  },
+  {
+    "title": "Structural and spectral analysis of dynamic graphs for attack detection",
+    "authors": "M. Jaber et al.",
+    "venue": "PFIA / RJCIA, Strasbourg, France",
+    "type": "National",
+    "year": 2023,
+    "links": [
+      { "label": "Paper", "url": "https://publis.icube.unistra.fr/5-JBP23" }
+    ]
+  }
+]

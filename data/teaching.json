@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Introduction to Cryptography",
+    "org": "EPITA, Paris",
+    "summary": "Lecture course covering the foundations and the protocols built on them.",
+    "topics": ["Shannon", "Symmetric & Asymmetric", "AES", "RSA", "Diffie-Hellman", "Hashing", "TLS"]
+  },
+  {
+    "title": "Cybersecurity Labs",
+    "org": "EPITA, Paris",
+    "summary": "Hands-on labs on traffic analysis and secure communication.",
+    "topics": ["PCAP analysis", "Network forensics", "IDS", "Secured channels", "Python"]
+  },
+  {
+    "title": "Private Tutoring",
+    "org": "Independent",
+    "summary": "One-to-one teaching for students and junior developers.",
+    "topics": ["Software Engineering", "WinForms apps", "Cryptography with Python", "C / C++ / C#"]
+  }
+]

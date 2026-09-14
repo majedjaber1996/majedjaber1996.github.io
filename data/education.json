@@ -1,0 +1,38 @@
+[
+  {
+    "degree": "PhD in Computer Science",
+    "field": "Explainable AI for IoT cyberattack detection",
+    "org": "Université de Strasbourg (ICube) & EPITA",
+    "place": "France",
+    "start": "2022",
+    "end": "2025",
+    "tags": ["Spectral Graph Analysis", "XAI", "Attack Detection"]
+  },
+  {
+    "degree": "MSc in Information Systems & Data Intelligence",
+    "field": "Data engineering and business intelligence",
+    "org": "Lebanese University",
+    "place": "Lebanon",
+    "start": "2018",
+    "end": "2019",
+    "tags": ["Data Warehousing", "BI", "Machine Learning"]
+  },
+  {
+    "degree": "MSc in Game Design & Development",
+    "field": "Real-time graphics and interactive systems",
+    "org": "Lebanese University",
+    "place": "Lebanon",
+    "start": "2016",
+    "end": "2018",
+    "tags": ["C++", "Unity", "Graphics"]
+  },
+  {
+    "degree": "BSc in Computer Science",
+    "field": "Software engineering fundamentals",
+    "org": "Lebanese University",
+    "place": "Lebanon",
+    "start": "2013",
+    "end": "2016",
+    "tags": ["Algorithms", "Databases", "Programming"]
+  }
+]

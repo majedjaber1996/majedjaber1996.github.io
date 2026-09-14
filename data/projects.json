@@ -1,0 +1,86 @@
+[
+  {
+    "title": "GPML — Graph Processing for Machine Learning",
+    "role": "Contributor",
+    "org": "EPITA / ICube, France",
+    "featured": true,
+    "year": "2025",
+    "categories": ["Research", "AI", "Security"],
+    "summary": "Open-source Python library that turns network traffic into dynamic graphs and extracts spectral measures for cyberattack detection.",
+    "points": [
+      "Graph construction from raw network flows",
+      "Spectral graph analysis with newly proposed measures",
+      "Time-series extraction for downstream ML models",
+      "Published in SoftwareX (Elsevier)"
+    ],
+    "stack": ["Python", "NetworkX", "NumPy", "scikit-learn"],
+    "links": [
+      { "label": "Code", "url": "https://github.com/lre-security-systems-team/gpml" },
+      { "label": "Paper", "url": "https://www.sciencedirect.com/science/article/pii/S2352711025002742" }
+    ]
+  },
+  {
+    "title": "ForenSys — Forensics for Connected Vehicles",
+    "role": "R&D Engineer",
+    "org": "Expleo, France",
+    "featured": true,
+    "year": "2026",
+    "categories": ["Research", "Security", "AI"],
+    "summary": "Neuro-symbolic digital forensic system that reconstructs and explains cyberattacks on smart vehicles.",
+    "points": [
+      "Semantic modelling of in-vehicle networks as knowledge graphs",
+      "Rule-based reasoning over ontologies for incident interpretation",
+      "LLM-assisted narrative reports traceable back to evidence"
+    ],
+    "stack": ["Python", "Neo4j", "OWL / SPARQL", "LLMs"],
+    "links": []
+  },
+  {
+    "title": "Price Forecasting",
+    "role": "Owner",
+    "org": "Personal project",
+    "featured": false,
+    "year": "2023",
+    "categories": ["AI", "Software"],
+    "summary": "Long-horizon price prediction model combining historical closing prices with news sentiment.",
+    "points": [
+      "LSTM / sequence models on price time series",
+      "Sentiment analysis over financial news feeds",
+      "Backtesting and error analysis"
+    ],
+    "stack": ["Python", "TensorFlow", "NLP", "Pandas"],
+    "links": []
+  },
+  {
+    "title": "Market Maker",
+    "role": "Contributor",
+    "org": "IDS Fintech, Lebanon",
+    "featured": true,
+    "year": "2021",
+    "categories": ["Software", "FinTech"],
+    "summary": "Algorithmic trading platform letting desks build and run proprietary market-making strategies on the Kuwait market.",
+    "points": [
+      "Real-time multi-source market data collection",
+      "Strategy engine with configurable rules",
+      "Order routing and settlement"
+    ],
+    "stack": ["C#", "Java", "Kafka", "SignalR", "WinForms", "MVVM"],
+    "links": []
+  },
+  {
+    "title": "Identity Service (ASP.NET Core)",
+    "role": "Owner",
+    "org": "Personal project",
+    "featured": false,
+    "year": "2021",
+    "categories": ["Software", "Security"],
+    "summary": "Reusable authentication and authorization service for multiple apps and APIs.",
+    "points": [
+      "Token-based auth with refresh flows",
+      "Two-factor authentication",
+      "Hardened API endpoints and secured channels"
+    ],
+    "stack": ["C#", "ASP.NET Core", "MSSQL", "JWT"],
+    "links": []
+  }
+]

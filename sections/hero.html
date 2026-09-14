@@ -1,0 +1,63 @@
+<section class="section hero" id="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+
+      <div class="hero-main reveal">
+        <p class="eyebrow">
+          <span class="pulse" aria-hidden="true"></span>
+          <span data-bind="location">Strasbourg, France</span>
+        </p>
+
+        <h1 class="hero-title" data-bind="name">Majed Jaber</h1>
+
+        <p class="hero-typed">
+          <span class="typed-text" id="typedText"></span><span class="typed-caret" aria-hidden="true"></span>
+        </p>
+
+        <p class="hero-summary" data-bind="summary"></p>
+
+        <ul class="chips" data-list="focus" aria-label="Focus areas">
+          <template><li class="chip" data-bind="."></li></template>
+        </ul>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#contact">
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M4 6l8 6 8-6"/></svg>
+            Get in touch
+          </a>
+          <a class="btn" data-bind-href="cvHref" data-cv-btn hidden>
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>
+            Download CV
+          </a>
+          <div class="social-row" data-list="links" aria-label="Profiles">
+            <template>
+              <a class="icon-btn" target="_blank" rel="noopener"
+                 data-bind-href="url" data-bind-title="label" data-bind-aria-label="label">
+                <span data-icon="icon"></span>
+              </a>
+            </template>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-aside reveal" data-delay="1">
+        <div class="card avatar-card">
+          <div class="avatar-ring">
+            <img class="avatar" data-bind-src="avatar" data-bind-alt="avatarAlt" width="180" height="180" />
+          </div>
+          <p class="avatar-role" data-bind="headline"></p>
+        </div>
+
+        <div class="stats" data-list="stats" aria-label="Key figures">
+          <template>
+            <div class="stat">
+              <span class="stat-value" data-counter="value" data-suffix="suffix">0</span>
+              <span class="stat-label" data-bind="label"></span>
+            </div>
+          </template>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>

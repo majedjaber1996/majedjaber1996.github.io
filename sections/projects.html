@@ -1,0 +1,51 @@
+<section class="section" id="projects">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="section-kicker">04 — Projects</p>
+      <h2 class="section-title">Things I have built</h2>
+      <p class="section-sub muted">Filter by area or search the stack.</p>
+    </header>
+
+    <div class="toolbar reveal">
+      <div class="filters" data-filter-group="projects" role="group" aria-label="Filter projects">
+        <button class="pill is-active" type="button" data-filter="all">All</button>
+        <!-- one pill per category, filled in by assets/js/ui.js -->
+        <template><button class="pill" type="button"></button></template>
+      </div>
+      <label class="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4.2-4.2"/></svg>
+        <input type="search" id="projectSearch" placeholder="Search projects…" aria-label="Search projects" />
+      </label>
+    </div>
+
+    <div class="grid cols-2" data-list="projects" id="projectGrid">
+      <template>
+        <article class="card project-card reveal" data-bind-data-cats="catsAttr" data-bind-data-text="searchText">
+          <div class="project-top">
+            <h3 class="project-title" data-bind="title"></h3>
+            <span class="badge badge-soft" data-show="featured">Featured</span>
+          </div>
+          <ul class="chips">
+            <li class="chip chip-sm" data-bind="role"></li>
+            <li class="chip chip-sm" data-bind="org"></li>
+            <li class="chip chip-sm" data-bind="year"></li>
+          </ul>
+          <p data-bind="summary"></p>
+          <ul class="bullets" data-list="points">
+            <template><li data-bind="."></li></template>
+          </ul>
+          <ul class="chips" data-list="stack">
+            <template><li class="chip chip-ghost" data-bind="."></li></template>
+          </ul>
+          <div class="cta-row" data-list="links">
+            <template>
+              <a class="btn btn-sm" target="_blank" rel="noopener" data-bind-href="url" data-bind="label"></a>
+            </template>
+          </div>
+        </article>
+      </template>
+    </div>
+
+    <p class="empty-state" id="projectEmpty" hidden>No project matches that filter.</p>
+  </div>
+</section>

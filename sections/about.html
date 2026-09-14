@@ -1,0 +1,58 @@
+<section class="section" id="about">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="section-kicker">01 — About</p>
+      <h2 class="section-title">What I work on</h2>
+    </header>
+
+    <div class="about-grid">
+      <div class="card reveal">
+        <p class="lede" data-bind="summary"></p>
+        <p class="muted">
+          I hold a PhD in Computer Science on explainable AI for IoT cyberattack detection, and
+          I have spent more than five years in cybersecurity R&amp;D — moving ideas from a paper
+          to a library other people can actually run.
+        </p>
+        <div class="about-pillars">
+          <div class="pillar">
+            <span class="pillar-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="5" cy="6" r="2.2"/><circle cx="19" cy="6" r="2.2"/><circle cx="12" cy="18" r="2.2"/><path d="M6.8 7.3l4 9M17.2 7.3l-4 9M7 6h10"/></svg>
+            </span>
+            <h3>Graphs</h3>
+            <p class="muted">Model traffic, vehicles and systems as graphs; read their structure and spectrum.</p>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.4 8-8 9-4.6-1-8-4-8-9V7l8-4z"/><path d="M9.5 12.2l1.9 1.9 3.4-3.7"/></svg>
+            </span>
+            <h3>Detection</h3>
+            <p class="muted">Find the attack in the noise — on networks, IoT and in-vehicle buses.</p>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 19V5h10l6 6v8z"/><path d="M8 10h6M8 14h8"/></svg>
+            </span>
+            <h3>Explanation</h3>
+            <p class="muted">An alert nobody can justify is not a result. Outputs trace back to evidence.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal" data-delay="1">
+        <h3 class="card-title">At a glance</h3>
+        <dl class="facts">
+          <div><dt>Based in</dt><dd data-bind="location"></dd></div>
+          <div><dt>Role</dt><dd data-bind="headline"></dd></div>
+          <div><dt>Email</dt><dd><a data-bind-href="mailtoHref" data-bind="email"></a></dd></div>
+        </dl>
+
+        <h3 class="card-title">Languages</h3>
+        <ul class="lang-list" data-list="languages">
+          <template>
+            <li><span data-bind="name"></span><span class="muted" data-bind="level"></span></li>
+          </template>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+<section class="section" id="teaching">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="section-kicker">06 — Teaching</p>
+      <h2 class="section-title">Courses and labs</h2>
+    </header>
+
+    <div class="grid cols-3" data-list="teaching">
+      <template>
+        <article class="card teach-card reveal">
+          <h3 class="card-title" data-bind="title"></h3>
+          <p class="chip chip-sm chip-inline" data-bind="org"></p>
+          <p data-bind="summary"></p>
+          <ul class="chips" data-list="topics">
+            <template><li class="chip chip-ghost" data-bind="."></li></template>
+          </ul>
+        </article>
+      </template>
+    </div>
+  </div>
+</section>

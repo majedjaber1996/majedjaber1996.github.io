@@ -1,0 +1,27 @@
+<section class="section" id="education">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="section-kicker">03 — Education</p>
+      <h2 class="section-title">Degrees</h2>
+    </header>
+
+    <div class="grid cols-2" data-list="education">
+      <template>
+        <article class="card edu-card reveal">
+          <span class="edu-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M22 9l-10-5L2 9l10 5 10-5z"/><path d="M6 12v4.5c0 1.7 2.7 3 6 3s6-1.3 6-3V12"/></svg>
+          </span>
+          <h3 class="edu-degree" data-bind="degree"></h3>
+          <p class="muted edu-field" data-bind="field"></p>
+          <ul class="chips">
+            <li class="chip chip-sm" data-bind="org"></li>
+            <li class="chip chip-sm" data-bind="period"></li>
+          </ul>
+          <ul class="chips" data-list="tags">
+            <template><li class="chip chip-ghost" data-bind="."></li></template>
+          </ul>
+        </article>
+      </template>
+    </div>
+  </div>
+</section>

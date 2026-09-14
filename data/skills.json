@@ -1,0 +1,18 @@
+[
+  {
+    "group": "AI & Machine Learning",
+    "items": ["PyTorch", "TensorFlow", "scikit-learn", "Graph Neural Networks", "Spectral Graph Analysis", "Explainable AI", "LLMs / GenAI", "Supervised Learning", "NLP"]
+  },
+  {
+    "group": "Security & Forensics",
+    "items": ["Attack Detection", "Network Traffic Analysis", "Digital Forensics", "Cryptography", "Identity & Access", "Automotive Security", "ISO 21434"]
+  },
+  {
+    "group": "Languages",
+    "items": ["Python", "C#", "C++", "C", "Java", "SQL", "SPARQL"]
+  },
+  {
+    "group": "Data & Infrastructure",
+    "items": ["Neo4j", "MSSQL", "PostgreSQL", "Kafka", "Docker", "GitHub Actions", "REST APIs", "Streaming / Hubs"]
+  }
+]
