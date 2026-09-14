@@ -4,11 +4,10 @@
   "headline": "AI Engineer & Security Researcher",
   "typed": [
     "AI Engineer",
-    "Security Researcher",
-    "PhD in Computer Science",
-    "Graph Learning & XAI"
+    "AI/Security Researcher",
+    "PhD in Computer Science"
   ],
-  "summary": "I build AI systems that detect and explain cyberattacks. My work combines graph learning, spectral analysis and knowledge graphs to turn raw network and vehicle telemetry into decisions a human can audit.",
+  "summary": "AI Engineer and PhD in Computer Science specialising in anomaly and intrusion detection for network traffic, industrial systems and sensor data. I combine machine learning, graph-based analysis and time-series foundation models to turn complex telemetry into accurate, explainable decisions, from research and data pipelines through deployment and validation.",
   "location": "Strasbourg, France",
   "avatar": "profile.png",
   "focus": [
