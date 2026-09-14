@@ -80,6 +80,11 @@ Adding a publication means one JSON object. You should almost never touch HTML a
 ### Add a job
 `data/experience.json`. Set `"current": true` on the present role (green dot + "Current" badge).
 
+### Add a degree
+`data/education.json` — same timeline style as Experience. Set `"highest": true` on the
+top qualification (green dot + "PhD" badge). Each entry takes `degree`, `org`, `place`,
+`start`, `end`, `summary` and `tags`.
+
 ### Enable the Download CV button
 Drop `cv.pdf` in the repo root and set `"cv": "cv.pdf"` in `data/profile.json`.
 Leave it `""` and the button stays hidden.

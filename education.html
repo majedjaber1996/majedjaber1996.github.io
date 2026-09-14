@@ -1,0 +1,36 @@
+<section class="section" id="education">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="section-kicker">03 — Education</p>
+      <h2 class="section-title">Where I studied</h2>
+      <p class="section-sub muted">Click any degree to expand what it covered.</p>
+    </header>
+
+    <ol class="timeline" data-list="education">
+      <template>
+        <li class="timeline-item reveal">
+          <span class="timeline-dot" data-toggle-class="highest:is-current" aria-hidden="true"></span>
+          <article class="card timeline-card" data-accordion>
+            <button class="timeline-head" type="button" aria-expanded="false">
+              <span class="timeline-headings">
+                <span class="timeline-role" data-bind="degree"></span>
+                <span class="timeline-org"><span data-bind="org"></span> · <span class="muted" data-bind="place"></span></span>
+              </span>
+              <span class="timeline-meta">
+                <span class="period" data-bind="period"></span>
+                <span class="badge" data-show="highest">PhD</span>
+                <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </span>
+            </button>
+            <div class="timeline-body" hidden>
+              <p data-bind="summary"></p>
+              <ul class="chips" data-list="tags">
+                <template><li class="chip chip-sm" data-bind="."></li></template>
+              </ul>
+            </div>
+          </article>
+        </li>
+      </template>
+    </ol>
+  </div>
+</section>

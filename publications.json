@@ -1,0 +1,85 @@
+[
+  {
+    "title": "Tool Demo: Topology analysis with GPML for detection of cyberattacks in Water Distribution Networks",
+    "authors": "M. Jaber, A. Q. Khan, A. Meshram, J. Michel, C. Frappé-Vialatoux, P. Parrend",
+    "venue": "MCT — Management of Complex Threats, IEEE/IFIP Network Operations and Management Symposium (NOMS 2026), Rome, Italy",
+    "type": "Demo",
+    "year": 2026,
+    "award": "",
+    "links": [
+      { "label": "Paper", "url": "https://arxiv.org/abs/2608.05902" },
+      { "label": "Code", "url": "https://github.com/lre-security-systems-team/gpml" }
+    ]
+  },
+  {
+    "title": "Cyberattack detection through GPML: Graph Processing for Machine Learning",
+    "authors": "M. Jaber, J. Michel, N. Boutry, P. Parrend",
+    "venue": "SoftwareX, Elsevier",
+    "type": "Journal",
+    "year": 2025,
+    "award": "",
+    "links": [
+      { "label": "Paper", "url": "https://www.sciencedirect.com/science/article/pii/S2352711025002742" },
+      { "label": "Preprint", "url": "https://arxiv.org/abs/2505.08964" },
+      { "label": "Code", "url": "https://github.com/lre-security-systems-team/gpml" }
+    ]
+  },
+  {
+    "title": "Spectral Graph Analysis of Bipartite Graphs for Advanced Attack Detection",
+    "authors": "M. Jaber, P. Parrend, N. Boutry",
+    "venue": "European Interdisciplinary Cybersecurity Conference (EICC '25), April 2025",
+    "type": "Conference",
+    "year": 2025,
+    "award": "",
+    "links": [
+      { "label": "Paper", "url": "https://link.springer.com/chapter/10.1007/978-3-031-94855-8_16" },
+      { "label": "Reproducible Capsule", "url": "https://github.com/majedjaber1996/jaber.2025.eicc" }
+    ]
+  },
+  {
+    "title": "Graph-Based Spectral Analysis for Detecting Cyber Attacks",
+    "authors": "M. Jaber, N. Boutry, P. Parrend",
+    "venue": "Int. Conf. on Availability, Reliability and Security (ARES '24), Vienna, Austria, July 2024",
+    "type": "Conference",
+    "year": 2024,
+    "award": "",
+    "links": [
+      { "label": "Paper", "url": "https://dl.acm.org/doi/10.1145/3664476.3664498" },
+      { "label": "Reproducible Capsule", "url": "https://github.com/lre-security-systems-team/jaber.2024.ares" }
+    ]
+  },
+  {
+    "title": "Spectral Analysis for Attack Detection",
+    "authors": "M. Jaber, N. Boutry, P. Parrend",
+    "venue": "RESSI — Rendez-Vous de la Recherche et de l'Enseignement de la Sécurité des Systèmes d'Information, Eppe-Sauvage, France, May 2024",
+    "type": "National",
+    "year": 2024,
+    "award": "",
+    "links": [
+      { "label": "Paper", "url": "https://publis.icube.unistra.fr/7-JBP24" }
+    ]
+  },
+  {
+    "title": "Structural and spectral analysis of dynamic graphs for attack detection",
+    "authors": "M. Jaber, N. Boutry, P. Parrend",
+    "venue": "RJCIA — Rencontres des Jeunes Chercheurs en Intelligence Artificielle, PFIA 2023, Strasbourg, France, May 2023",
+    "type": "National",
+    "year": 2023,
+    "award": "",
+    "links": [
+      { "label": "Paper", "url": "https://www.lrde.epita.fr/dload-new/papers/jaber.23.rjcia.pdf" }
+    ]
+  },
+  {
+    "title": "Towards attack detection in traffic data based on spectral graph analysis",
+    "authors": "M. Jaber, N. Boutry, P. Parrend",
+    "venue": "Complex Computational Ecosystems (CCE '23), Baku, Azerbaijan, April 2023",
+    "type": "Conference",
+    "year": 2023,
+    "award": "★ Best Student Presentation Award",
+    "links": [
+      { "label": "Paper", "url": "https://hal.science/hal-04103064v1/file/Jaber%20et%20al..pdf" },
+      { "label": "HAL", "url": "https://hal.science/hal-04103064" }
+    ]
+  }
+]

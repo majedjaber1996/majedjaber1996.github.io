@@ -1,0 +1,50 @@
+<section class="section" id="publications">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="section-kicker">05 — Publications</p>
+      <h2 class="section-title">Publications</h2>
+      <p class="section-sub muted">
+        Also on
+        <a href="https://scholar.google.com/citations?user=IiuFIiYAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        and
+        <a href="https://publis.icube.unistra.fr/?author=majed+jaber&amp;allaut=or#hideMenu" target="_blank" rel="noopener">ICube</a>.
+      </p>
+    </header>
+
+    <div class="toolbar reveal">
+      <div class="filters" data-filter-group="publications" role="group" aria-label="Filter publications">
+        <button class="pill is-active" type="button" data-filter="all">All</button>
+        <!-- one pill per type, filled in by assets/js/ui.js -->
+        <template><button class="pill" type="button"></button></template>
+      </div>
+      <label class="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4.2-4.2"/></svg>
+        <input type="search" id="publicationSearch" placeholder="Search publications…" aria-label="Search publications" />
+      </label>
+    </div>
+
+    <ol class="pub-list" data-list="publications" id="publicationList">
+      <template>
+        <li class="card pub-card reveal" data-bind-data-cats="catsAttr" data-bind-data-text="searchText">
+          <span class="pub-year" data-bind="year"></span>
+          <div class="pub-body">
+            <h3 class="pub-title" data-bind="title"></h3>
+            <p class="pub-venue muted" data-bind="authors"></p>
+            <p class="pub-venue muted" data-bind="venue"></p>
+            <ul class="chips">
+              <li class="chip chip-sm" data-bind="type"></li>
+              <li class="chip chip-sm" data-show="award" data-bind="award"></li>
+            </ul>
+            <div class="cta-row" data-list="links">
+              <template>
+                <a class="btn btn-sm" target="_blank" rel="noopener" data-bind-href="url" data-bind="label"></a>
+              </template>
+            </div>
+          </div>
+        </li>
+      </template>
+    </ol>
+
+    <p class="empty-state" id="publicationEmpty" hidden>No publication matches that filter.</p>
+  </div>
+</section>
