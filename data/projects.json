@@ -20,22 +20,6 @@
     ]
   },
   {
-    "title": "ForenSys — Forensics for Connected Vehicles",
-    "role": "R&D Engineer",
-    "org": "Expleo, France",
-    "featured": true,
-    "year": "2026",
-    "categories": ["Research", "Security", "AI"],
-    "summary": "Neuro-symbolic digital forensic system that reconstructs and explains cyberattacks on smart vehicles.",
-    "points": [
-      "Semantic modelling of in-vehicle networks as knowledge graphs",
-      "Rule-based reasoning over ontologies for incident interpretation",
-      "LLM-assisted narrative reports traceable back to evidence"
-    ],
-    "stack": ["Python", "Neo4j", "OWL / SPARQL", "LLMs"],
-    "links": []
-  },
-  {
     "title": "Price Forecasting",
     "role": "Owner",
     "org": "Personal project",

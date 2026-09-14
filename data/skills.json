@@ -1,15 +1,15 @@
 [
   {
     "group": "AI & Machine Learning",
-    "items": ["PyTorch", "TensorFlow", "scikit-learn", "Graph Neural Networks", "Spectral Graph Analysis", "Explainable AI", "LLMs / GenAI", "Supervised Learning", "NLP"]
+    "items": ["PyTorch", "TensorFlow", "scikit-learn", "Graph Neural Networks", "Spectral Graph Analysis", "Explainable AI", "LLMs / GenAI", "Supervised Learning", "Unsupervised Learning", "NLP"]
   },
   {
     "group": "Security & Forensics",
-    "items": ["Attack Detection", "Network Traffic Analysis", "Digital Forensics", "Cryptography", "Identity & Access", "Automotive Security", "ISO 21434"]
+    "items": ["Attack Detection", "Network Traffic Analysis", "Digital Forensics", "Cryptography", "Identity & Access"]
   },
   {
     "group": "Languages",
-    "items": ["Python", "C#", "C++", "C", "Java", "SQL", "SPARQL"]
+    "items": ["Python", "C#", "C++", "C", "Java", "SQL", "SQL", "Firebase", "PowerShell"]
   },
   {
     "group": "Data & Infrastructure",

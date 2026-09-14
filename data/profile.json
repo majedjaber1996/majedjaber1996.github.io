@@ -31,8 +31,7 @@
     { "label": "GitHub",  "url": "https://github.com/majedjaber1996", "icon": "github" },
     { "label": "LinkedIn","url": "https://www.linkedin.com/in/majedjaber96", "icon": "linkedin" },
     { "label": "Scholar", "url": "https://scholar.google.com/citations?user=IiuFIiYAAAAJ", "icon": "scholar" },
-    { "label": "ORCID",   "url": "https://orcid.org/0009-0005-2882-4647", "icon": "orcid" },
-    { "label": "ICube",   "url": "https://publis.icube.unistra.fr/?author=majed+jaber&allaut=or#hideMenu", "icon": "link" }
+    { "label": "ORCID",   "url": "https://orcid.org/0009-0005-2882-4647", "icon": "orcid" }
   ],
   "languages": [
     { "name": "Arabic",  "level": "Native" },

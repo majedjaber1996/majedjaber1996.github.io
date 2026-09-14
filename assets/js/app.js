@@ -8,11 +8,11 @@
 
 import { render } from './bind.js';
 import * as ui from './ui.js';
+import { getLocale, initLanguage, localizeData, translateDocument } from './i18n.js';
 
 /* ---------- which fragment gets which data ---------- */
 const SECTIONS = [
   { name: 'hero',         scope: (d) => d.profile },
-  { name: 'about',        scope: (d) => d.profile },
   { name: 'experience',   scope: (d) => ({ experience: d.experience }) },
   { name: 'education',    scope: (d) => ({ education: d.education }) },
   { name: 'projects',     scope: (d) => ({ projects: d.projects }) },
@@ -89,7 +89,9 @@ async function mount(section, data) {
 
 /* ---------- boot ---------- */
 async function boot() {
+  const locale = getLocale();
   ui.initTheme();
+  initLanguage();
   ui.initMobileNav();
   ui.initScrollChrome();
   ui.initYear();
@@ -97,7 +99,7 @@ async function boot() {
   let data;
   try {
     const loaded = await Promise.all(DATA_FILES.map(json));
-    data = Object.fromEntries(DATA_FILES.map((name, i) => [name, loaded[i]]));
+    data = localizeData(Object.fromEntries(DATA_FILES.map((name, i) => [name, loaded[i]])), locale);
   } catch (err) {
     console.error('[portfolio] data failed to load:', err);
     document.getElementById('main').innerHTML =
@@ -123,6 +125,7 @@ async function boot() {
   ui.initTyped(data.profile.typed);
   ui.initFilter('projects', meta.projectCategories);
   ui.initFilter('publications', meta.publicationTypes);
+  translateDocument(locale);
   ui.initCopyEmail();
   ui.initScrollSpy();
   ui.honourHash();

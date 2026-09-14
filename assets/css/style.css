@@ -303,6 +303,7 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round
 }
 .icon-btn:hover { background: var(--chip); border-color: var(--line-strong); text-decoration: none; transform: translateY(-1px); }
 .icon-btn svg { width: 19px; height: 19px; }
+.language-btn { width: 42px; font-size: 12px; font-weight: 700; letter-spacing: .04em; }
 
 #themeToggle .i-moon { display: none; }
 :root[data-theme="dark"] #themeToggle .i-sun  { display: none; }
